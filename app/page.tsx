@@ -370,13 +370,14 @@ export default function Home() {
         <h2 className="h2">Ihre Schwimmlehrer</h2>
         <div className="team">
           <article className="person">
-            <div
-              role="img"
-              aria-label="Foto von Richy folgt"
-              className="photo-placeholder"
-            >
-              Foto folgt
-            </div>
+            <img
+              src="/richy.jpg"
+              alt="Richy, Schwimmlehrer bei Gecko Swimschool"
+              width={1126}
+              height={2000}
+              loading="lazy"
+              className="person-photo"
+            />
             <div className="stack-sm">
               <h3>Richy</h3>
               <p className="role">Schwimmlehrer</p>

@@ -652,6 +652,14 @@ h3 {
   font-size: 15px !important;
   color: var(--muted);
 }
+.person-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: var(--radius);
+}
 .photo-placeholder {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
