@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { alternates } from "@/lib/routes";
 import { legal, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Impressum",
+  alternates: alternates("imprint", "de"),
   robots: { index: true, follow: true },
 };
 

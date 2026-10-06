@@ -1,6 +1,10 @@
 import { site } from "@/lib/site";
+import { routes, type Lang } from "@/lib/routes";
+import { texts } from "@/lib/texts";
 
-export default function Footer() {
+export default function Footer({ lang }: { lang: Lang }) {
+  const t = texts[lang].footer;
+
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
@@ -8,9 +12,9 @@ export default function Footer() {
           <img src="/gecko-mark.png" alt="" width={56} height={37} />
           <span>{site.name}</span>
         </div>
-        <nav aria-label="Rechtliches" className="footer-nav">
-          <a href="/impressum/">Impressum</a>
-          <a href="/datenschutz/">Datenschutz</a>
+        <nav aria-label={t.navLabel} className="footer-nav">
+          <a href={routes.imprint[lang]}>{t.imprint}</a>
+          <a href={routes.privacy[lang]}>{t.privacy}</a>
         </nav>
         <p className="muted">
           © {new Date().getFullYear()} Gecko Swimschool – {site.location}

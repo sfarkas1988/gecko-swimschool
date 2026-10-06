@@ -24,4 +24,5 @@ export const legal = {
   register:
     "[Registereintrag, z. B. Registro Mercantil de Palma, Tomo/Folio/Hoja – nur bei S.L.]",
   lastUpdated: "Oktober 2026",
+  lastUpdatedEn: "October 2026",
 };

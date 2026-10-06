@@ -1,28 +1,29 @@
 import { site } from "@/lib/site";
+import { routes, type Lang } from "@/lib/routes";
+import { texts } from "@/lib/texts";
 import { WhatsAppIcon } from "./Icons";
+import LangSwitch from "./LangSwitch";
 
-const nav = [
-  { href: "/#ueber-uns", label: "Über uns" },
-  { href: "/#angebote", label: "Angebote" },
-  { href: "/#preise", label: "Preise" },
-  { href: "/#team", label: "Team" },
-  { href: "/#bewertungen", label: "Bewertungen" },
-  { href: "/#kontakt", label: "Kontakt" },
-];
+export default function Header({ lang }: { lang: Lang }) {
+  const t = texts[lang].header;
+  const home = routes.home[lang];
+  const nav = [
+    { href: `${home}#ueber-uns`, label: t.nav.about },
+    { href: `${home}#angebote`, label: t.nav.offers },
+    { href: `${home}#preise`, label: t.nav.prices },
+    { href: `${home}#team`, label: t.nav.team },
+    { href: `${home}#bewertungen`, label: t.nav.reviews },
+    { href: `${home}#kontakt`, label: t.nav.contact },
+  ];
 
-export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a
-          href="/"
-          className="brand"
-          aria-label="Gecko Swimschool – zur Startseite"
-        >
+        <a href={home} className="brand" aria-label={t.homeLabel}>
           <img src="/gecko-mark.png" alt="" width={64} height={42} />
         </a>
 
-        <nav aria-label="Hauptnavigation" className="main-nav">
+        <nav aria-label={t.navLabel} className="main-nav">
           {nav.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}
@@ -31,17 +32,7 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
-          <div role="group" aria-label="Sprache" className="lang-switch">
-            <button type="button" aria-pressed="true" className="is-active">
-              DE
-            </button>
-            <button type="button" disabled title="Bald verfügbar">
-              EN
-            </button>
-            <button type="button" disabled title="Bald verfügbar">
-              ES
-            </button>
-          </div>
+          <LangSwitch lang={lang} label={t.langLabel} />
           <a
             href={site.whatsappHref}
             className="btn btn-dark btn-sm"

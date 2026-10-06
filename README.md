@@ -40,14 +40,21 @@ Rosa hinterlegter Text auf Impressum und Datenschutz = noch offener Platzhalter.
 
 ## Wo was liegt
 
-| Datei                                | Inhalt                                    |
-| ------------------------------------ | ----------------------------------------- |
-| `lib/site.ts`                        | Telefon, E-Mail, WhatsApp, Pflichtangaben |
-| `app/page.tsx`                       | Startseite (alle Abschnitte)              |
-| `app/globals.css`                    | Farben (`:root`), Layout, Mobil-Ansicht   |
-| `app/impressum/`, `app/datenschutz/` | Rechtstexte                               |
-| `public/`                            | Logo-Dateien                              |
+| Datei                                          | Inhalt                                             |
+| ---------------------------------------------- | -------------------------------------------------- |
+| `lib/site.ts`                                  | Telefon, E-Mail, WhatsApp, Pflichtangaben          |
+| `lib/texts/de.ts`, `lib/texts/en.ts`           | Alle Texte der Startseite, Menü, Fußzeile (DE, EN) |
+| `components/HomePage.tsx`                      | Aufbau der Startseite (alle Abschnitte)            |
+| `app/globals.css`                              | Farben (`:root`), Layout, Mobil-Ansicht            |
+| `app/(de)/impressum/`, `app/(de)/datenschutz/` | Rechtstexte (deutsch)                              |
+| `app/(en)/en/imprint/`, `app/(en)/en/privacy/` | Rechtstexte (englisch)                             |
+| `lib/routes.ts`, `components/LangSwitch.tsx`   | Sprachen und Adressen der Seiten                   |
+| `public/`                                      | Logo-Dateien                                       |
+
+## Sprachen
+
+Die Website gibt es auf Deutsch (`/`) und Englisch (`/en/`). Wer einen Text ändert, ändert ihn bitte **in beiden Sprachen** – auf der Startseite in `lib/texts/de.ts` und `lib/texts/en.ts`, bei den Rechtstexten in beiden Seiten-Dateien. Spanisch ist vorerst ausgeblendet.
 
 ## Später geplant
 
-Buchungssystem mit Zahlung, Kontaktformular (Resend), Englisch/Spanisch, Instagram.
+Buchungssystem mit Zahlung, Kontaktformular (Resend), Spanisch, Instagram.

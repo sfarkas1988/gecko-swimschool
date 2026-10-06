@@ -9,7 +9,8 @@ const nextConfig = {
   images: { unoptimized: true },
   // Nur ein Arbeitsprozess beim Bauen: Sonst braucht der Build über 1 GB Arbeitsspeicher
   // und wird auf dem Server (Coolify) mittendrin abgebrochen.
-  experimental: { cpus: 1 },
+  // globalNotFound: Die „Seite nicht gefunden“-Seite (app/global-not-found.tsx) gilt für beide Sprachen.
+  experimental: { cpus: 1, globalNotFound: true },
 };
 
 export default nextConfig;
