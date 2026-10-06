@@ -1,4 +1,6 @@
 #!/bin/sh
 # Formatiert die geänderten Dateien automatisch mit Prettier.
 # Direkter node-Aufruf: das Git von GitHub Desktop hat kein bash, npm/npx laufen dort nicht.
+. "$(dirname "$0")/find-node.sh"
+
 node node_modules/lint-staged/bin/lint-staged.js
