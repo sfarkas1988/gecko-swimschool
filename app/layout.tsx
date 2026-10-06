@@ -32,12 +32,20 @@ export const metadata: Metadata = {
     "Privater Schwimmunterricht für Kinder auf ganz Mallorca – sicher, ruhig und diskret bei Ihnen am Pool. Deutsche und Schweizer Schwimmabzeichen.",
   openGraph: {
     title: "Gecko Swimschool Mallorca",
-    description: "Mobile Kinderschwimmschule auf Mallorca – wir kommen zu Ihrem Pool.",
+    description:
+      "Mobile Kinderschwimmschule auf Mallorca – wir kommen zu Ihrem Pool.",
     url: site.url,
     siteName: site.name,
     locale: "de_DE",
     type: "website",
-    images: [{ url: "/gecko-logo.png", width: 686, height: 765, alt: "Gecko Swimschool Mallorca" }],
+    images: [
+      {
+        url: "/gecko-logo.png",
+        width: 686,
+        height: 765,
+        alt: "Gecko Swimschool Mallorca",
+      },
+    ],
   },
 };
 
@@ -45,7 +53,11 @@ export const viewport: Viewport = {
   themeColor: "#9DFFFF",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="de" className={`${montserrat.variable} ${literata.variable}`}>
       <body>

@@ -12,7 +12,9 @@ export default function Footer() {
           <a href="/impressum/">Impressum</a>
           <a href="/datenschutz/">Datenschutz</a>
         </nav>
-        <p className="muted">© {new Date().getFullYear()} Gecko Swimschool – {site.location}</p>
+        <p className="muted">
+          © {new Date().getFullYear()} Gecko Swimschool – {site.location}
+        </p>
       </div>
     </footer>
   );

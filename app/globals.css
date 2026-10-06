@@ -1,10 +1,10 @@
 /* Gecko Swimschool – Farben & Grundlagen */
 :root {
   --white: #ffffff;
-  --ink: #0b1d22;      /* Navy aus dem Logo */
-  --aqua: #9dffff;     /* Markenfarbe – nur als Akzent */
-  --muted: #4a6168;    /* Sekundärtext */
-  --pink: #ffd6e2;     /* nur Abzeichen-Pills */
+  --ink: #0b1d22; /* Navy aus dem Logo */
+  --aqua: #9dffff; /* Markenfarbe – nur als Akzent */
+  --muted: #4a6168; /* Sekundärtext */
+  --pink: #ffd6e2; /* nur Abzeichen-Pills */
 
   --display: var(--font-display), "Montserrat", system-ui, sans-serif;
   --body: var(--font-body), "Literata", Georgia, serif;
@@ -224,7 +224,9 @@ h3 {
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
 .btn-sm {
   min-height: 44px;
@@ -653,7 +655,11 @@ h3 {
 .photo-placeholder {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
-  background: repeating-linear-gradient(135deg, rgba(11, 29, 34, 0.08) 0 12px, rgba(11, 29, 34, 0.02) 12px 24px);
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(11, 29, 34, 0.08) 0 12px,
+    rgba(11, 29, 34, 0.02) 12px 24px
+  );
   border: 2px dashed rgba(11, 29, 34, 0.4);
   display: flex;
   align-items: center;

@@ -1,0 +1,7 @@
+.next
+.next-check
+out
+node_modules
+package-lock.json
+public
+next-env.d.ts

@@ -9,14 +9,21 @@ export const metadata: Metadata = {
 // Rosa hinterlegte Angaben sind Platzhalter aus lib/site.ts – vor dem Livegang ausfüllen.
 const T = ({ children }: { children: React.ReactNode }) => {
   const text = String(children);
-  return text.startsWith("[") ? <span className="todo">{text}</span> : <>{text}</>;
+  return text.startsWith("[") ? (
+    <span className="todo">{text}</span>
+  ) : (
+    <>{text}</>
+  );
 };
 
 export default function Impressum() {
   return (
     <article className="container legal">
       <h1>Impressum</h1>
-      <p className="muted">Angaben gemäß Art. 10 des spanischen Gesetzes 34/2002 (LSSI-CE) und § 5 DDG</p>
+      <p className="muted">
+        Angaben gemäß Art. 10 des spanischen Gesetzes 34/2002 (LSSI-CE) und § 5
+        DDG
+      </p>
 
       <h2>Anbieter</h2>
       <address>
@@ -59,28 +66,32 @@ export default function Impressum() {
 
       <h2>Verbraucherstreitbeilegung</h2>
       <p>
-        Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer
-        Verbraucherschlichtungsstelle teilzunehmen.
+        Wir sind nicht bereit und nicht verpflichtet, an
+        Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+        teilzunehmen.
       </p>
 
       <h2>Haftung für Inhalte</h2>
       <p>
-        Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
-        Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Preise und Verfügbarkeiten sind freibleibend; maßgeblich
-        ist die jeweilige Buchungsbestätigung.
+        Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die
+        Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir
+        jedoch keine Gewähr. Preise und Verfügbarkeiten sind freibleibend;
+        maßgeblich ist die jeweilige Buchungsbestätigung.
       </p>
 
       <h2>Haftung für Links</h2>
       <p>
-        Diese Website enthält Links zu externen Angeboten Dritter (z. B. WhatsApp). Auf deren Inhalte haben wir keinen
-        Einfluss; für sie ist stets der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von Rechtsverletzungen
-        entfernen wir entsprechende Links umgehend.
+        Diese Website enthält Links zu externen Angeboten Dritter (z. B.
+        WhatsApp). Auf deren Inhalte haben wir keinen Einfluss; für sie ist
+        stets der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von
+        Rechtsverletzungen entfernen wir entsprechende Links umgehend.
       </p>
 
       <h2>Urheberrecht</h2>
       <p>
-        Texte, Logo und Gestaltung dieser Website sind urheberrechtlich geschützt. Eine Verwendung außerhalb dieser Website
-        bedarf unserer vorherigen schriftlichen Zustimmung.
+        Texte, Logo und Gestaltung dieser Website sind urheberrechtlich
+        geschützt. Eine Verwendung außerhalb dieser Website bedarf unserer
+        vorherigen schriftlichen Zustimmung.
       </p>
 
       <p className="muted small">Stand: {legal.lastUpdated}</p>

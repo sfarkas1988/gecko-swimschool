@@ -21,6 +21,7 @@ export const legal = {
   country: "Spanien",
   taxId: "[NIF / NIE]",
   vatId: "[USt-IdNr. / NIF-IVA, z. B. ESX1234567X – falls vorhanden]",
-  register: "[Registereintrag, z. B. Registro Mercantil de Palma, Tomo/Folio/Hoja – nur bei S.L.]",
+  register:
+    "[Registereintrag, z. B. Registro Mercantil de Palma, Tomo/Folio/Hoja – nur bei S.L.]",
   lastUpdated: "Oktober 2026",
 };

@@ -1,0 +1,15 @@
+#!/bin/sh
+# Prüft vor dem Hochladen, ob sich die Website bauen lässt.
+# Eigener Ausgabeordner, damit eine laufende Vorschau (npm run dev) nicht gestört wird.
+# Direkter node-Aufruf: das Git von GitHub Desktop hat kein bash, npm/npx laufen dort nicht.
+echo "Prüfe, ob sich die Website bauen lässt (dauert ca. eine Minute) ..."
+
+if ! NEXT_DIST_DIR=.next-check node node_modules/next/dist/bin/next build; then
+  echo ""
+  echo "=================================================================="
+  echo " Die Website lässt sich nicht bauen – das Hochladen wurde gestoppt."
+  echo " Es ist nichts kaputt gegangen. Bitte Claude bitten:"
+  echo " \"Der Build schlägt fehl, bitte beheben.\""
+  echo "=================================================================="
+  exit 1
+fi

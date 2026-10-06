@@ -88,12 +88,24 @@ export const MailIcon = ({ size = 20 }: P) => (
   </svg>
 );
 
-const STAR = "M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6z";
+const STAR =
+  "M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6z";
 
 export const Stars = ({ count = 5 }: { count?: number }) => (
-  <svg width="120" height="22" viewBox="0 0 124 24" fill="currentColor" role="img" aria-label={`${count} von 5 Sternen`}>
+  <svg
+    width="120"
+    height="22"
+    viewBox="0 0 124 24"
+    fill="currentColor"
+    role="img"
+    aria-label={`${count} von 5 Sternen`}
+  >
     {Array.from({ length: 5 }).map((_, i) => (
-      <g key={i} transform={`translate(${i * 25} 0)`} opacity={i < count ? 1 : 0.2}>
+      <g
+        key={i}
+        transform={`translate(${i * 25} 0)`}
+        opacity={i < count ? 1 : 0.2}
+      >
         <path d={STAR} />
       </g>
     ))}

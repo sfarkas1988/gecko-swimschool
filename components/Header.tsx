@@ -14,7 +14,11 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a href="/" className="brand" aria-label="Gecko Swimschool – zur Startseite">
+        <a
+          href="/"
+          className="brand"
+          aria-label="Gecko Swimschool – zur Startseite"
+        >
           <img src="/gecko-mark.png" alt="" width={64} height={42} />
           <span>Gecko</span>
         </a>
@@ -39,7 +43,12 @@ export default function Header() {
               ES
             </button>
           </div>
-          <a href={site.whatsappHref} className="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+          <a
+            href={site.whatsappHref}
+            className="btn btn-dark btn-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <WhatsAppIcon size={18} />
             WhatsApp
           </a>

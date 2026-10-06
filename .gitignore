@@ -1,5 +1,7 @@
 node_modules
 .next
+.next-check
+next-env.d.ts
 out
 .vercel
 *.tsbuildinfo

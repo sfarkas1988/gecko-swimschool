@@ -10,10 +10,18 @@ npm run dev      # http://localhost:3000
 npm run build    # erzeugt den Ordner "out" mit der fertigen Website
 ```
 
+## Automatische Prüfungen
+
+Nach einmaligem `npm install` läuft alles von selbst – auch in GitHub Desktop:
+
+- **Beim Commit** werden die geänderten Dateien automatisch einheitlich formatiert (Prettier).
+- **Beim Push** wird geprüft, ob sich die Website bauen lässt. Das dauert etwa eine Minute. Schlägt die Prüfung fehl, wird nichts hochgeladen – dann Claude bitten: „Der Build schlägt fehl, bitte beheben.“
+- **Auf GitHub** läuft dieselbe Prüfung noch einmal als Sicherheitsnetz (Reiter _Actions_).
+
 ## Online stellen
 
 **Vercel (empfohlen):** Projekt auf GitHub hochladen → auf vercel.com „Add New Project“ → Repository wählen → Deploy.
-Danach unter *Settings → Domains* `gecko-swimschool.com` hinzufügen und die angezeigten DNS-Einträge bei deinem Domain-Anbieter eintragen.
+Danach unter _Settings → Domains_ `gecko-swimschool.com` hinzufügen und die angezeigten DNS-Einträge bei deinem Domain-Anbieter eintragen.
 
 **Netlify / Cloudflare Pages:** Build-Befehl `npm run build`, Ausgabeordner `out`.
 
@@ -32,13 +40,13 @@ Rosa hinterlegter Text auf Impressum und Datenschutz = noch offener Platzhalter.
 
 ## Wo was liegt
 
-| Datei | Inhalt |
-|---|---|
-| `lib/site.ts` | Telefon, E-Mail, WhatsApp, Pflichtangaben |
-| `app/page.tsx` | Startseite (alle Abschnitte) |
-| `app/globals.css` | Farben (`:root`), Layout, Mobil-Ansicht |
-| `app/impressum/`, `app/datenschutz/` | Rechtstexte |
-| `public/` | Logo-Dateien |
+| Datei                                | Inhalt                                    |
+| ------------------------------------ | ----------------------------------------- |
+| `lib/site.ts`                        | Telefon, E-Mail, WhatsApp, Pflichtangaben |
+| `app/page.tsx`                       | Startseite (alle Abschnitte)              |
+| `app/globals.css`                    | Farben (`:root`), Layout, Mobil-Ansicht   |
+| `app/impressum/`, `app/datenschutz/` | Rechtstexte                               |
+| `public/`                            | Logo-Dateien                              |
 
 ## Später geplant
 
