@@ -7,6 +7,9 @@ const nextConfig = {
   distDir: process.env.NEXT_DIST_DIR || ".next",
   trailingSlash: true,
   images: { unoptimized: true },
+  // Nur ein Arbeitsprozess beim Bauen: Sonst braucht der Build über 1 GB Arbeitsspeicher
+  // und wird auf dem Server (Coolify) mittendrin abgebrochen.
+  experimental: { cpus: 1 },
 };
 
 export default nextConfig;
