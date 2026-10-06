@@ -88,6 +88,19 @@ export const MailIcon = ({ size = 20 }: P) => (
   </svg>
 );
 
+export const CheckIcon = ({ size = 20 }: P) => (
+  <svg {...base(size)} strokeWidth={2.4}>
+    <path d="M5 12.5l4.5 4.5L19 7.5" />
+  </svg>
+);
+
+export const ArrowDownIcon = ({ size = 20 }: P) => (
+  <svg {...base(size)} strokeWidth={2.2}>
+    <path d="M12 5v14" />
+    <path d="M6 13l6 6 6-6" />
+  </svg>
+);
+
 const STAR =
   "M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6z";
 

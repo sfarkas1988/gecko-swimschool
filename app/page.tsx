@@ -1,5 +1,7 @@
 import { site } from "@/lib/site";
 import {
+  ArrowDownIcon,
+  CheckIcon,
   ClockIcon,
   HomeIcon,
   InfoIcon,
@@ -12,6 +14,13 @@ import {
   WavesIcon,
   WhatsAppIcon,
 } from "@/components/Icons";
+
+const heroFacts = [
+  "Individueller Einzelunterricht in Ihrem vertrauten Umfeld",
+  "Verschiedene Gruppenkurse",
+  "Finca-Kurse",
+  "Qualifizierte Abnahme vom Seepferdchen bis Freischwimmer Gold",
+];
 
 const values = [
   {
@@ -95,22 +104,27 @@ export default function Home() {
       {/* Hero */}
       <section id="top" className="hero">
         <div className="hero-text">
-          <h1>Wo Vertrauen wächst, lernen Kinder schwimmen.</h1>
-          <div className="btn-row">
-            <a
-              href={site.whatsappHref}
-              className="btn btn-dark btn-lg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <WhatsAppIcon />
-              Per WhatsApp anfragen
-            </a>
-            <a href="#preise" className="btn btn-outline btn-lg">
-              Preise ansehen
-            </a>
-          </div>
-          <p className="hero-note">Deutsche und Schweizer Schwimmabzeichen.</p>
+          <h1>
+            Wo Vertrauen wächst,
+            <br />
+            lernen Kinder schwimmen.
+          </h1>
+          <p className="hero-lead">
+            Private Kinderschwimmschule auf Mallorca. Einzel- sowie
+            Gruppenkurse.
+          </p>
+          <a href="#ueber-uns" className="btn btn-dark btn-lg hero-cta">
+            So unterrichten wir
+            <ArrowDownIcon />
+          </a>
+          <ul className="hero-facts">
+            {heroFacts.map((fact) => (
+              <li key={fact}>
+                <CheckIcon />
+                {fact}
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="hero-logo">
           <img
@@ -118,6 +132,7 @@ export default function Home() {
             alt="Gecko Swimschool Mallorca – Logo mit schwimmendem Gecko"
             width={686}
             height={765}
+            fetchPriority="high"
           />
         </div>
       </section>

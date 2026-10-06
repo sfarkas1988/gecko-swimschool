@@ -20,7 +20,6 @@ export default function Header() {
           aria-label="Gecko Swimschool – zur Startseite"
         >
           <img src="/gecko-mark.png" alt="" width={64} height={42} />
-          <span>Gecko</span>
         </a>
 
         <nav aria-label="Hauptnavigation" className="main-nav">
