@@ -141,9 +141,6 @@ h3 {
   gap: 24px 64px;
   align-items: start;
 }
-.split-end {
-  align-items: end;
-}
 
 .grid-3 {
   display: grid;
@@ -452,16 +449,10 @@ h3 {
   flex-direction: column;
   gap: 56px;
 }
-.deep-lead {
-  max-width: 36em;
-  font-size: 19px;
-}
 .values {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 40px;
-  border-top: 1px solid rgba(157, 255, 255, 0.3);
-  padding-top: 40px;
 }
 .value {
   display: flex;

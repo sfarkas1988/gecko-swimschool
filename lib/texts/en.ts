@@ -43,11 +43,8 @@ export const en: Texts = {
   about: {
     title: "Who we are",
     lead: "Gecko is a mobile swim school for children on Mallorca. We come to your own pool – with everything your child needs to learn.",
-    text: "Gecko is run by Richy and Jelena, a German-Swiss team based in Portocolom. We teach calmly, in familiar surroundings and at your child’s own pace. And at the end, if you wish, your child can take the matching badge – to German or Swiss standards.",
   },
   trust: {
-    title: "Calm is the best swimming aid.",
-    lead: "Richy served for twelve years in a special forces unit of the German armed forces. There you learn to stay calm in any situation, to spot risks early and to take responsibility seriously. Children feel exactly that in the water – and so do parents at the poolside.",
     values: [
       {
         title: "Safety first",

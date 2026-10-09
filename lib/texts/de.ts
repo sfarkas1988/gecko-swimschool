@@ -42,11 +42,8 @@ export const de = {
   about: {
     title: "Wer wir sind",
     lead: "Gecko ist eine mobile Schwimmschule für Kinder auf Mallorca. Wir kommen zu Ihnen an den eigenen Pool – mit allem, was Ihr Kind zum Lernen braucht.",
-    text: "Hinter Gecko stehen Richy und Jelena, ein deutsch-schweizer Team mit Sitz in Portocolom. Wir unterrichten in Ruhe, in Ihrem vertrauten Umfeld und im Tempo Ihres Kindes. Am Ende steht, wenn Sie möchten, das passende Abzeichen – nach deutschem oder Schweizer Standard.",
   },
   trust: {
-    title: "Ruhe ist die beste Schwimmhilfe.",
-    lead: "Richy war zwölf Jahre Soldat in einer Spezialeinheit der Bundeswehr. Dort lernt man, in jeder Lage ruhig zu bleiben, Risiken früh zu erkennen und Verantwortung ernst zu nehmen. Genau das spüren Kinder im Wasser – und Eltern am Beckenrand.",
     // Reihenfolge: Sicherheit, Ruhe, Diskretion, Verlässlichkeit (passend zu den Symbolen)
     values: [
       {

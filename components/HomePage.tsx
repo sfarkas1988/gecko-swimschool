@@ -69,12 +69,11 @@ export default function HomePage({ t }: { t: Texts }) {
         <h2 className="h2">{t.about.title}</h2>
         <div className="stack prose">
           <p className="lead">{t.about.lead}</p>
-          <p>{t.about.text}</p>
         </div>
       </section>
 
       {/* Vertrauen */}
-      <section className="deep" aria-labelledby="vertrauen-titel">
+      <section className="deep">
         <svg
           className="wave wave-top"
           viewBox="0 0 1440 80"
@@ -84,12 +83,6 @@ export default function HomePage({ t }: { t: Texts }) {
           <path d="M0 48 C 120 16, 240 16, 360 48 S 600 80, 720 48 S 960 16, 1080 48 S 1320 80, 1440 48 L1440 80 L0 80 Z" />
         </svg>
         <div className="container deep-inner">
-          <div className="split split-end">
-            <h2 id="vertrauen-titel" className="h2 h2-xl accent">
-              {t.trust.title}
-            </h2>
-            <p className="deep-lead">{t.trust.lead}</p>
-          </div>
           <div className="values">
             {t.trust.values.map((v, i) => (
               <div key={v.title} className="value">
