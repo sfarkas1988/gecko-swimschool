@@ -30,14 +30,13 @@ export const en: Texts = {
     privacy: "Privacy policy",
   },
   hero: {
-    title: ["Where trust grows,", "children learn to swim."],
-    lead: "Private swim school for children on Mallorca. One-to-one and group lessons.",
+    title: ["Learn Safe.", "Swim Happy.", "Grow Confident."],
+    lead: "Your swim school for children on Mallorca.",
     cta: "How we teach",
     facts: [
+      "Certified badge tests from Seepferdchen to Freischwimmer Gold",
       "One-to-one lessons in surroundings your child knows",
       "A range of group courses",
-      "Courses at your finca",
-      "Certified badge tests from Seepferdchen to Freischwimmer Gold",
     ],
     logoAlt: "Gecko Swimschool Mallorca – logo with a swimming gecko",
   },

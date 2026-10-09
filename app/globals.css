@@ -356,26 +356,41 @@ h3 {
   padding: clamp(28px, 5vw, 64px);
   background: var(--aqua);
   border-radius: var(--radius-lg);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px 56px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: clamp(20px, 3vw, 36px);
+}
+.hero-logo {
+  order: -1;
+  display: flex;
+  justify-content: center;
+}
+.hero-logo img {
+  width: 100%;
+  max-width: clamp(250px, 32vw, 420px);
 }
 .hero-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  text-align: center;
 }
 .hero h1 {
   font-weight: 800;
-  font-size: clamp(26px, 2.7vw, 38px);
+  font-size: clamp(28px, 4.2vw, 56px);
   line-height: 1.06;
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
+.hero h1 span {
+  white-space: nowrap;
+}
 .hero-lead {
   max-width: 30em;
-  font-size: 17px;
+  font-size: clamp(17px, 1.5vw, 20px);
+  font-style: italic;
   line-height: 1.55;
 }
 .hero-cta {
@@ -384,13 +399,13 @@ h3 {
 .hero-facts {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  gap: 10px 40px;
   font-family: var(--display);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.35;
+  text-align: left;
 }
 .hero-facts li {
   display: flex;
@@ -400,32 +415,13 @@ h3 {
 .hero-facts svg {
   flex: none;
 }
-.hero-logo {
-  order: -1;
-  display: flex;
-  justify-content: center;
-}
-.hero-logo img {
-  width: 100%;
-  max-width: 220px;
-}
 
 @media (min-width: 900px) {
-  .hero {
-    grid-template-columns: 1.1fr 0.9fr;
-  }
   .hero-cta {
     width: auto;
-    align-self: flex-start;
   }
   .hero-facts {
     margin-top: 8px;
-  }
-  .hero-logo {
-    order: 0;
-  }
-  .hero-logo img {
-    max-width: 460px;
   }
 }
 

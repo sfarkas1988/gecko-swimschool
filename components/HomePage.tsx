@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { site } from "@/lib/site";
 import type { Texts } from "@/lib/texts";
 import {
@@ -32,9 +33,11 @@ export default function HomePage({ t }: { t: Texts }) {
       <section id="top" className="hero">
         <div className="hero-text">
           <h1>
-            {t.hero.title[0]}
-            <br />
-            {t.hero.title[1]}
+            {t.hero.title.map((part) => (
+              <Fragment key={part}>
+                <span>{part}</span>{" "}
+              </Fragment>
+            ))}
           </h1>
           <p className="hero-lead">{t.hero.lead}</p>
           <a href="#ueber-uns" className="btn btn-dark btn-lg hero-cta">

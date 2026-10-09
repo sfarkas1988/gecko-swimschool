@@ -29,14 +29,13 @@ export const de = {
     privacy: "Datenschutz",
   },
   hero: {
-    title: ["Wo Vertrauen wächst,", "lernen Kinder schwimmen."],
-    lead: "Private Kinderschwimmschule auf Mallorca. Einzel- sowie Gruppenkurse.",
+    title: ["Learn Safe.", "Swim Happy.", "Grow Confident."],
+    lead: "Ihre Kinderschwimmschule auf Mallorca.",
     cta: "So unterrichten wir",
     facts: [
+      "Qualifizierte Abnahme vom Seepferdchen bis Freischwimmer Gold",
       "Individueller Einzelunterricht in Ihrem vertrauten Umfeld",
       "Verschiedene Gruppenkurse",
-      "Finca-Kurse",
-      "Qualifizierte Abnahme vom Seepferdchen bis Freischwimmer Gold",
     ],
     logoAlt: "Gecko Swimschool Mallorca – Logo mit schwimmendem Gecko",
   },
