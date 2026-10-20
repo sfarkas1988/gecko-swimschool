@@ -146,10 +146,10 @@ export default function Privacy() {
         To understand how our website is used, we use the statistics tool
         Plausible Analytics (open source). We do not use a service provided by
         Plausible but our own installation at analytics.mallorca-plus.de. The
-        server is operated by{" "}
-        <T>[OPERATOR of the statistics server, company name and address]</T> and
-        is located in <T>[COUNTRY, e.g. Germany]</T>. We have concluded a data
-        processing agreement with the operator in accordance with Art. 28 GDPR.
+        server is operated by Sandor Farkas (Wolf-Tech), Bessemerstraße 51,
+        12103 Berlin, Germany, and is located in a data centre of IONOS SE in
+        Germany. We have concluded a data processing agreement with the operator
+        in accordance with Art. 28 GDPR.
       </p>
       <p>
         Plausible does not set cookies and does not store anything on your

@@ -143,10 +143,11 @@ export default function Datenschutz() {
         Um zu verstehen, wie unsere Website genutzt wird, setzen wir das
         Statistik-Werkzeug Plausible Analytics (Open Source) ein. Wir nutzen
         dafür keinen Dienst von Plausible, sondern eine eigene Installation
-        unter analytics.mallorca-plus.de. Der Server wird betrieben von{" "}
-        <T>[BETREIBER des Statistik-Servers, Firmenname und Anschrift]</T> und
-        steht in <T>[LAND, z. B. Deutschland]</T>. Mit dem Betreiber besteht ein
-        Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.
+        unter analytics.mallorca-plus.de. Der Server wird betrieben von Sandor
+        Farkas (Wolf-Tech), Bessemerstraße 51, 12103 Berlin, Deutschland, und
+        steht in einem Rechenzentrum der IONOS SE in Deutschland. Mit dem
+        Betreiber besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28
+        DSGVO.
       </p>
       <p>
         Plausible setzt keine Cookies und speichert nichts auf Ihrem Gerät.
