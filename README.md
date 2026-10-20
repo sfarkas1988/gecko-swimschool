@@ -21,13 +21,13 @@ Nach einmaligem `npm install` läuft alles von selbst – auch in GitHub Desktop
 ## Online stellen
 
 **Vercel (empfohlen):** Projekt auf GitHub hochladen → auf vercel.com „Add New Project“ → Repository wählen → Deploy.
-Danach unter _Settings → Domains_ `gecko-swimschool.com` hinzufügen und die angezeigten DNS-Einträge bei deinem Domain-Anbieter eintragen.
+Danach unter _Settings → Domains_ `www.gecko-swimschool-mallorca.com` hinzufügen und die angezeigten DNS-Einträge bei deinem Domain-Anbieter eintragen.
 
 **Netlify / Cloudflare Pages:** Build-Befehl `npm run build`, Ausgabeordner `out`.
 
 **Klassischer Webspace (IONOS, Strato …):** `npm run build` ausführen und den Inhalt von `out/` per FTP hochladen.
 
-> Achtung beim Domain-Umzug: E-Mail-Einträge (MX-Records) für info@gecko-swimschool.com nicht löschen.
+> Die E-Mail-Adresse info@gecko-swimschool.com läuft über die Domain gecko-swimschool.com (Google-Postfach), nicht über die Website-Domain. Deren E-Mail-Einträge (MX-Records) nicht löschen.
 
 ## Vor dem Livegang ausfüllen
 
