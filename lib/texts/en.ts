@@ -128,8 +128,10 @@ export const en: Texts = {
     title: "Prices",
     lead: "Private one-to-one lessons. A lesson lasts 45 minutes, including preparation and follow-up.",
     valid: "Valid 2025/2026",
+    // "id" ist die feste Kennung für die Besucherstatistik – nicht ändern.
     cards: [
       {
+        id: "3",
         name: "3-lesson card",
         price: "€270",
         perLesson: "€90 per lesson",
@@ -137,6 +139,7 @@ export const en: Texts = {
         cta: "Ask about the 3-lesson card",
       },
       {
+        id: "5",
         name: "5-lesson card",
         price: "€420",
         perLesson: "€84 per lesson",
@@ -144,6 +147,7 @@ export const en: Texts = {
         cta: "Ask about the 5-lesson card",
       },
       {
+        id: "10",
         name: "10-lesson card",
         price: "€790",
         perLesson: "€79 per lesson",
@@ -151,6 +155,7 @@ export const en: Texts = {
         cta: "Ask about the 10-lesson card",
       },
       {
+        id: "15",
         name: "15-lesson card",
         price: "€1,110",
         perLesson: "€74 per lesson",

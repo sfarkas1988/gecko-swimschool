@@ -1,5 +1,7 @@
 // Alle deutschen Texte der Startseite, Kopf- und Fußzeile.
 // Wer hier etwas ändert, ändert bitte auch die englische Fassung in en.ts.
+import type { PackageId } from "@/lib/analytics";
+
 export const de = {
   meta: {
     title: "Gecko Swimschool Mallorca – Mobile Kinderschwimmschule",
@@ -128,8 +130,10 @@ export const de = {
     title: "Preise",
     lead: "Privater Einzelunterricht. Eine Lektion dauert 45 Minuten, inklusive Vor- und Nachbereitung.",
     valid: "Gültig 2025/2026",
+    // "id" ist die feste Kennung für die Besucherstatistik – nicht ändern.
     cards: [
       {
+        id: "3" as PackageId,
         name: "3er-Karte",
         price: "270 €",
         perLesson: "90 € pro Lektion",
@@ -137,6 +141,7 @@ export const de = {
         cta: "3er-Karte anfragen",
       },
       {
+        id: "5" as PackageId,
         name: "5er-Karte",
         price: "420 €",
         perLesson: "84 € pro Lektion",
@@ -144,6 +149,7 @@ export const de = {
         cta: "5er-Karte anfragen",
       },
       {
+        id: "10" as PackageId,
         name: "10er-Karte",
         price: "790 €",
         perLesson: "79 € pro Lektion",
@@ -151,6 +157,7 @@ export const de = {
         cta: "10er-Karte anfragen",
       },
       {
+        id: "15" as PackageId,
         name: "15er-Karte",
         price: "1.110 €",
         perLesson: "74 € pro Lektion",

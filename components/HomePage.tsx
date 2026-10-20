@@ -1,5 +1,7 @@
 import { Fragment } from "react";
+import { eventClass } from "@/lib/analytics";
 import { site } from "@/lib/site";
+import TrackSectionView from "@/components/TrackSectionView";
 import type { Texts } from "@/lib/texts";
 import {
   ArrowDownIcon,
@@ -40,7 +42,10 @@ export default function HomePage({ t }: { t: Texts }) {
             ))}
           </h1>
           <p className="hero-lead">{t.hero.lead}</p>
-          <a href="#ueber-uns" className="btn btn-dark btn-lg hero-cta">
+          <a
+            href="#ueber-uns"
+            className={`btn btn-dark btn-lg hero-cta ${eventClass("Click Section Link", { target: "about", position: "hero" })}`}
+          >
             {t.hero.cta}
             <ArrowDownIcon />
           </a>
@@ -165,7 +170,10 @@ export default function HomePage({ t }: { t: Texts }) {
             <h3>{t.courses.mermaidTitle}</h3>
             <p className="muted">{t.courses.mermaidText}</p>
           </div>
-          <a href="#kontakt" className="btn btn-outline">
+          <a
+            href="#kontakt"
+            className={`btn btn-outline ${eventClass("Click Section Link", { target: "contact", position: "courses" })}`}
+          >
             {t.courses.more}
           </a>
         </div>
@@ -205,6 +213,7 @@ export default function HomePage({ t }: { t: Texts }) {
 
       {/* Preise */}
       <section id="preise" className="container section-bottom stack-lg">
+        <TrackSectionView sectionId="preise" event="View Prices" />
         <div className="section-head section-head-row">
           <div className="stack-sm">
             <h2 className="h2">{t.prices.title}</h2>
@@ -214,14 +223,14 @@ export default function HomePage({ t }: { t: Texts }) {
         </div>
         <div className="price-grid">
           {t.prices.cards.map((c) => (
-            <div key={c.name} className="price-card">
+            <div key={c.id} className="price-card">
               <h3>{c.name}</h3>
               <p className="price">{c.price}</p>
               <p className="muted">{c.perLesson}</p>
               <p className="saving">{c.saving}</p>
               <a
                 href={site.whatsappHref}
-                className="btn btn-outline btn-block"
+                className={`btn btn-outline btn-block ${eventClass("Click WhatsApp", { position: "price_card", package: c.id })}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -326,13 +335,14 @@ export default function HomePage({ t }: { t: Texts }) {
 
       {/* Kontakt */}
       <section id="kontakt" className="contact">
+        <TrackSectionView sectionId="kontakt" event="View Contact" />
         <div className="container contact-inner">
           <div className="stack">
             <h2 className="h2 accent">{t.contact.title}</h2>
             <p>{t.contact.text}</p>
             <a
               href={site.whatsappHref}
-              className="btn btn-accent btn-lg"
+              className={`btn btn-accent btn-lg ${eventClass("Click WhatsApp", { position: "contact" })}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -343,7 +353,14 @@ export default function HomePage({ t }: { t: Texts }) {
               <div>
                 <dt>{t.contact.phone}</dt>
                 <dd>
-                  <a href={site.phoneHref}>{site.phoneDisplay}</a>
+                  <a
+                    href={site.phoneHref}
+                    className={eventClass("Click Phone", {
+                      position: "contact",
+                    })}
+                  >
+                    {site.phoneDisplay}
+                  </a>
                 </dd>
               </div>
               <div>
@@ -356,7 +373,10 @@ export default function HomePage({ t }: { t: Texts }) {
             <MailIcon size={36} />
             <h3>{t.contact.mailTitle}</h3>
             <p>{t.contact.mailText}</p>
-            <a href={`mailto:${site.email}`} className="mail-link">
+            <a
+              href={`mailto:${site.email}`}
+              className={`mail-link ${eventClass("Click Email", { position: "contact" })}`}
+            >
               {site.email}
             </a>
           </div>

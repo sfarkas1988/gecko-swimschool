@@ -1,8 +1,10 @@
 // Zentrale Stammdaten – hier ändern, dann gilt es überall auf der Seite.
 export const site = {
   name: "Gecko Swimschool Mallorca",
-  domain: "gecko-swimschool.com",
-  url: "https://gecko-swimschool.com",
+  domain: "www.gecko-swimschool-mallorca.com",
+  url: "https://www.gecko-swimschool-mallorca.com",
+  // Die E-Mail läuft absichtlich über die alte Domain gecko-swimschool.com:
+  // Nur dort gibt es ein Postfach (Google). Nicht auf die Website-Domain umstellen.
   email: "info@gecko-swimschool.com",
   phoneDisplay: "+34 614 28 81 72",
   phoneHref: "tel:+34614288172",

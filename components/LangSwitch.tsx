@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { eventClass } from "@/lib/analytics";
 import { routes, type Lang } from "@/lib/routes";
 
 // Spanisch ist vorerst ausgeblendet. Zum Einschalten hier "es" ergänzen
@@ -30,7 +31,9 @@ export default function LangSwitch({
           hrefLang={l}
           lang={l}
           aria-current={l === lang ? "true" : undefined}
-          className={l === lang ? "is-active" : undefined}
+          className={
+            l === lang ? "is-active" : eventClass("Switch Language", { to: l })
+          }
         >
           {l.toUpperCase()}
         </a>
