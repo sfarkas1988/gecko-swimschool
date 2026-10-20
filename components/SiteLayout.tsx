@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { analytics, plausibleInit } from "@/lib/analytics";
 import { montserrat, literata } from "@/lib/fonts";
 import type { Lang } from "@/lib/routes";
 import { site } from "@/lib/site";
@@ -44,6 +46,15 @@ export default function SiteLayout({
 }) {
   return (
     <html lang={lang} className={`${montserrat.variable} ${literata.variable}`}>
+      {/* Besucherstatistik nur im fertigen Build, nicht bei „npm run dev“. */}
+      {process.env.NODE_ENV === "production" && (
+        <head>
+          <script
+            id="plausible-init"
+            dangerouslySetInnerHTML={{ __html: plausibleInit }}
+          />
+        </head>
+      )}
       <body>
         <a href="#inhalt" className="skip-link">
           {texts[lang].header.skipLink}
@@ -51,6 +62,9 @@ export default function SiteLayout({
         <Header lang={lang} />
         <main id="inhalt">{children}</main>
         <Footer lang={lang} />
+        {process.env.NODE_ENV === "production" && (
+          <Script src={analytics.script} strategy="afterInteractive" />
+        )}
       </body>
     </html>
   );

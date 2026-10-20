@@ -48,7 +48,11 @@ export default function Privacy() {
 
       <h2>2. The key points in brief</h2>
       <ul>
-        <li>We do not use cookies, analytics or tracking tools.</li>
+        <li>
+          We do not use cookies or advertising trackers. For anonymous visitor
+          statistics we use Plausible Analytics on our own server – without
+          cookies and without sharing data with third parties.
+        </li>
         <li>
           Fonts are loaded from our own server – there is no connection to
           Google.
@@ -136,11 +140,33 @@ export default function Privacy() {
         of Google or other third parties.
       </p>
 
-      <h2>7. Cookies and analytics</h2>
+      <h2>7. Cookies and visitor statistics</h2>
+      <p>This website does not use cookies or any tools for advertising.</p>
       <p>
-        This website does not use cookies or any tools for audience measurement
-        or advertising. Should this change, we will update this policy and –
-        where required – obtain your consent beforehand.
+        To understand how our website is used, we use the statistics tool
+        Plausible Analytics (open source). We do not use a service provided by
+        Plausible but our own installation at analytics.mallorca-plus.de. The
+        server is operated by{" "}
+        <T>[OPERATOR of the statistics server, company name and address]</T> and
+        is located in <T>[COUNTRY, e.g. Germany]</T>. We have concluded a data
+        processing agreement with the operator in accordance with Art. 28 GDPR.
+      </p>
+      <p>
+        Plausible does not set cookies and does not store anything on your
+        device. It records the page visited, the page you came from, browser,
+        operating system, device type and country (derived from the IP address).
+        We also count how far visitors scroll and whether you click on contact
+        buttons (WhatsApp, phone, email), menu items or the language switch.
+        Your IP address is not stored: together with browser details and a daily
+        changing random value it is turned into an identifier that expires after
+        24 hours. This means we cannot recognise you on other days or on other
+        websites. We only see aggregated figures.
+      </p>
+      <p>
+        The legal basis is our legitimate interest in improving our services
+        (Art. 6(1)(f) GDPR). You can object to this at any time (Art. 21 GDPR);
+        the easiest way is to block the statistics with a common ad or content
+        blocker in your browser.
       </p>
 
       <h2>8. Your rights</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiteLayout from "@/components/SiteLayout";
+import TrackNotFound from "@/components/TrackNotFound";
 import { routes } from "@/lib/routes";
 import "./globals.css";
 
@@ -12,6 +13,7 @@ export default function GlobalNotFound() {
   return (
     <SiteLayout lang="de">
       <article className="container legal">
+        <TrackNotFound />
         <h1>Seite nicht gefunden</h1>
         <p>
           Diese Seite gibt es leider nicht.{" "}

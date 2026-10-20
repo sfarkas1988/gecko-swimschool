@@ -51,6 +51,17 @@ Rosa hinterlegter Text auf Impressum und Datenschutz = noch offener Platzhalter.
 | `lib/routes.ts`, `components/LangSwitch.tsx`   | Sprachen und Adressen der Seiten                   |
 | `public/`                                      | Logo-Dateien                                       |
 
+## Besucherstatistik (Plausible)
+
+Die Seite zählt Besucher mit Plausible auf [analytics.mallorca-plus.de](https://analytics.mallorca-plus.de) – ohne Cookies, daher ohne Cookie-Banner. Gezählt wird nur auf der echten Website, nicht lokal und nicht in Vorschau-Versionen.
+
+Alle Ereignisse (z. B. „Click WhatsApp“) stehen in `lib/analytics.ts`. Regeln:
+
+- Namen englisch, Wörter groß, Verb + Gegenstand (`Click Phone`, `View Prices`). Einmal vergebene Namen nie ändern, sonst reißt die Statistik ab.
+- Zusatzangaben nur aus festen Werten (z. B. `position: header`), nie Namen, Telefonnummern oder Freitext.
+- Neues Ereignis: in `lib/analytics.ts` eintragen, am Button `eventClass(...)` setzen (oder `trackEvent(...)` aufrufen) und den Namen in Plausible unter _Site Settings → Goals_ als **Custom Event** anlegen. Ohne Goal kommt das Ereignis an, erscheint aber nicht in der Übersicht.
+- Wird etwas Neues erfasst, die Datenschutzerklärung (Abschnitt 7, beide Sprachen) anpassen.
+
 ## Sprachen
 
 Die Website gibt es auf Deutsch (`/`) und Englisch (`/en/`). Wer einen Text ändert, ändert ihn bitte **in beiden Sprachen** – auf der Startseite in `lib/texts/de.ts` und `lib/texts/en.ts`, bei den Rechtstexten in beiden Seiten-Dateien. Spanisch ist vorerst ausgeblendet.

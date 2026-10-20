@@ -40,7 +40,9 @@ export default function Datenschutz() {
       <h2>2. Das Wichtigste in Kürze</h2>
       <ul>
         <li>
-          Wir setzen keine Cookies, keine Analyse- und keine Tracking-Tools ein.
+          Wir setzen keine Cookies und keine Werbe-Tracker ein. Für eine anonyme
+          Besucherstatistik nutzen wir Plausible Analytics auf einem eigenen
+          Server – ohne Cookies und ohne Weitergabe an Dritte.
         </li>
         <li>
           Schriftarten werden von unserem eigenen Server geladen – es besteht
@@ -133,12 +135,37 @@ export default function Datenschutz() {
         hergestellt.
       </p>
 
-      <h2>7. Cookies und Analyse</h2>
+      <h2>7. Cookies und Besucherstatistik</h2>
       <p>
-        Diese Website verwendet keine Cookies und keine Werkzeuge zur
-        Reichweitenmessung oder Werbung. Sollte sich das ändern, passen wir
-        diese Erklärung an und holen – wo erforderlich – vorher Ihre
-        Einwilligung ein.
+        Diese Website verwendet keine Cookies und keine Werkzeuge für Werbung.
+      </p>
+      <p>
+        Um zu verstehen, wie unsere Website genutzt wird, setzen wir das
+        Statistik-Werkzeug Plausible Analytics (Open Source) ein. Wir nutzen
+        dafür keinen Dienst von Plausible, sondern eine eigene Installation
+        unter analytics.mallorca-plus.de. Der Server wird betrieben von{" "}
+        <T>[BETREIBER des Statistik-Servers, Firmenname und Anschrift]</T> und
+        steht in <T>[LAND, z. B. Deutschland]</T>. Mit dem Betreiber besteht ein
+        Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.
+      </p>
+      <p>
+        Plausible setzt keine Cookies und speichert nichts auf Ihrem Gerät.
+        Erfasst werden die aufgerufene Seite, die Seite, von der Sie kommen,
+        Browser, Betriebssystem, Gerätetyp und das Land (aus der IP-Adresse
+        abgeleitet). Außerdem zählen wir, wie weit gescrollt wird und ob Sie auf
+        Kontakt-Buttons (WhatsApp, Telefon, E-Mail), Menüpunkte oder den
+        Sprachwechsel klicken. Ihre IP-Adresse wird nicht gespeichert: Sie wird
+        zusammen mit Browserangaben und einem täglich wechselnden Zufallswert zu
+        einer Kennung umgerechnet, die nach 24 Stunden verfällt. So können wir
+        Sie weder an anderen Tagen noch auf anderen Websites wiedererkennen. Wir
+        sehen nur zusammengefasste Zahlen.
+      </p>
+      <p>
+        Rechtsgrundlage ist unser berechtigtes Interesse, unser Angebot zu
+        verbessern (Art. 6 Abs. 1 lit. f DSGVO). Sie können dem jederzeit
+        widersprechen (Art. 21 DSGVO); am einfachsten, indem Sie die Statistik
+        mit einem gängigen Werbe- oder Inhaltsblocker in Ihrem Browser
+        blockieren.
       </p>
 
       <h2>8. Ihre Rechte</h2>

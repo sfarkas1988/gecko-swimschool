@@ -40,6 +40,8 @@ Next.js 15 (App Router) als **statischer Export** (`output: "export"`, `trailing
 
 **Zentrale Daten:** `lib/site.ts` (`site`: Kontakt, URL; `legal`: Pflichtangaben). Werte in `[ECKIGEN KLAMMERN]` sind Platzhalter; auf den Rechtsseiten werden sie mit `className="todo"` rosa markiert und müssen vor dem Livegang ersetzt werden (siehe README, „Vor dem Livegang ausfüllen“).
 
+**Besucherstatistik:** Plausible (selbst betrieben). Script und Init in `components/SiteLayout.tsx`, nur im Produktions-Build; die Init zählt nur auf den Hosts in `lib/analytics.ts` (Vorschau-Domains und localhost nicht). Alle Eventnamen und Props sind dort typisiert – Klicks über `eventClass()` (Plausible-CSS-Klassen, kein JS nötig), sonst `trackEvent()`. Nie `window.plausible` direkt aufrufen. Doku für Menschen: README, „Besucherstatistik“.
+
 **Gestaltung:** Alles in `app/globals.css` (Farben als Variablen in `:root`, Layout, Mobil-Ansicht) – kein CSS-Framework. Schriften über `next/font/google` in `lib/fonts.ts` (werden selbst ausgeliefert, wichtig für DSGVO – keine externen Font-/CDN-Links einbauen).
 
 ## Inhaltliche Regel
