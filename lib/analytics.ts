@@ -6,12 +6,7 @@
 export const analytics = {
   script: "https://analytics.mallorca-plus.de/js/pa-IYYHWzLx03pYDc4B71c0w.js",
   // Nur auf diesen Adressen wird gezählt – nicht lokal und nicht in Vorschau-Versionen.
-  hosts: [
-    "gecko-swimschool-mallorca.com",
-    "www.gecko-swimschool-mallorca.com",
-    "gecko-swimschool.com",
-    "www.gecko-swimschool.com",
-  ],
+  hosts: ["gecko-swimschool-mallorca.com", "www.gecko-swimschool-mallorca.com"],
 };
 
 export type PackageId = "3" | "5" | "10" | "15";
